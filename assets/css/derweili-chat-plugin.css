@@ -1,0 +1,79 @@
+/*
+ * Fake messenger icon
+ */
+#derweili-fb-chat-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /*background-color: rgb(0, 132, 255);*/
+    background-color: rgba(46, 157, 255, 0.51);
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    bottom: 24px;
+    right: 24px;
+    -webkit-box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+#derweili-fb-chat-opt-in-message{
+    display: none;
+    width: 100%;
+    width: calc(100% - 20px);
+    max-width: 300px;
+    position: fixed;
+    bottom: 108px;
+    right: 24px;
+    background-color: white;
+    z-index: 99999;
+    -webkit-box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+    border-radius: 3px;
+
+}
+
+#derweili-fb-chat-opt-in-message.active{
+    display: block;
+}
+
+#derweili-fb-chat-opt-in-message .inner{
+    padding: 20px;
+}
+
+#derweili-fb-chat-opt-in-message a {
+    text-align: center;
+    display: block;
+    font-size: 0.8em;
+}
+
+/* Accept Button Style */
+#derweili-fb-chat-opt-in-message .button{
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    padding: 10px 10px;
+    background: #4267b2;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#derweili-fb-chat-opt-in-message .close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 15px;
+    cursor: pointer;
+}
+.derweili-fb-hidden {
+
+}
+
+/*
+ * Chrome auto scroll-down bugfix
+ * https://stackoverflow.com/questions/47959861/facebook-customer-chat-plugin-auto-scroll-to-bottom
+ */
+.fb_dialog, .fb_reset {position: fixed !important;z-index: 10000 !important;}
